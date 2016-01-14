@@ -1,0 +1,32 @@
+<link rel="import" href="../polymer/polymer.html">
+<!--
+A Material Divider Element.
+
+Example:
+
+    <paper-divider></paper-divider>
+
+@demo demo/index.html
+@hero hero.svg
+-->
+<dom-module id="paper-divider">
+  <template>
+    <style>
+      :host {
+        display: block;
+        height: 1px;
+        min-height: 1px;
+        max-height: 1px;
+        background-color: var(--paper-divider-color, #000);
+        opacity: 0.12;
+        @apply(--paper-divider);
+      }
+    </style>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'paper-divider',
+    });
+  </script>
+</dom-module>

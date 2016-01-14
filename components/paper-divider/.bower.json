@@ -1,0 +1,39 @@
+{
+  "name": "paper-divider",
+  "authors": [
+    "Vinicius Patrinhani <patrinhani@ciandt.com>"
+  ],
+  "description": "A Material Divider Element.",
+  "keywords": [
+    "web-component",
+    "polymer",
+    "paper-divider",
+    "material",
+    "divider"
+  ],
+  "main": "paper-divider.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/WebPaperElements/paper-divider/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "^3.4.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#~1.0.3"
+  },
+  "_release": "90c3e542fb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "90c3e542fb329939f92a89f5634836ce80193f94"
+  },
+  "_source": "git://github.com/WebPaperElements/paper-divider.git",
+  "_target": "master",
+  "_originalSource": "WebPaperElements/paper-divider",
+  "_direct": true
+}
