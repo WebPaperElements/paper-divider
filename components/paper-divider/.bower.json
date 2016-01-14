@@ -23,13 +23,14 @@
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-    "web-component-tester": "^3.4.0"
+    "web-component-tester": "^3.4.0",
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#~1.0.3"
   },
-  "_release": "4da115f6cf",
+  "_release": "90c3e542fb",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "4da115f6cf87dd786219535b699b726909fbaa64"
+    "commit": "90c3e542fb329939f92a89f5634836ce80193f94"
   },
   "_source": "git://github.com/WebPaperElements/paper-divider.git",
   "_target": "master",
