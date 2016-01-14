@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+    <title>paper-divider Demo</title>
+    <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../paper-material/paper-material.html">
+    <link rel="import" href="../paper-divider.html">
+    <style is="custom-style" include="demo-pages-shared-styles">
+      paper-material {
+        padding-top: 16px;  
+        padding-bottom: 16px;  
+      }
+      
+      paper-material p {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
+    </style>    
+  </head>
+  <body unresolved>
+    <div class="horizontal-section-container">
+      <div class="vertical-section">
+        <h3>An example of <code>&lt;paper-divider&gt;</code> in a dark background:</h3>
+        <demo-snippet>
+          <template>
+            <style is="custom-style">
+              paper-material.dark {
+                color: white;
+                background-color: var(--paper-indigo-700);        
+              }
+              
+              paper-divider.divider-for-dark-background {
+                --paper-divider-color: #fff;
+              }
+            </style>
+            <paper-material class="dark" elevation="1">
+              <p>Something before the divider...</p>
+              <paper-divider class="divider-for-dark-background"></paper-divider>
+              <p>Something after the divider...</p>
+            </paper-material>
+          </template>
+        </demo-snippet>
+      </div>
+      <div class="vertical-section">
+        <h3>An example of <code>&lt;paper-divider&gt;</code> in a light background:</h3>
+        <demo-snippet>
+          <template>
+            <style is="custom-style">
+              paper-material.light {
+                color: black;
+                background-color: white;        
+              }
+              
+              paper-divider.divider-for-light-background {
+                --paper-divider-color: #000;
+              }
+            </style>
+            <paper-material class="light" elevation="1">
+              <p>Something before the divider...</p>
+              <paper-divider class="divider-for-light-background"></paper-divider>
+              <p>Something after the divider...</p>
+            </paper-material>
+          </template>
+        </demo-snippet>
+      </div>
+    </div>
+    <script>
+      var seedElement = document.querySelector('paper-divider');
+    </script>
+
+  </body>
+</html>
