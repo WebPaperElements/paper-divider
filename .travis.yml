@@ -20,6 +20,10 @@ addons:
 script:
   - xvfb-run wct
   - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
+addons:
+  sauce_connect:
+    username: "patrinhani-ciandt"
+    access_key: "e7560d31-b7b9-4108-abad-12b4124e9edc"
 env:
   global:
   - secure: celV+5Du87f9b1crJIDVzagPdhGDDSPz+rOl3rKMKfuhakWW2MOEzqHG22CSG8uI54esauwBVNBTUXrW6ZssdHYpm95w0SYtRZUWxggdqkpiYS1/xy9If+WE8V4zu8v1vk8N+hDCvldfEqloCx5DewxaOU6Rh9xkNutv1OfdjN5i8z62e4YrKtgXihpT5fzoVK4We4i5CsDBIlTJH8S+Wu6Rwq0UuC8UYmJ49X2l9Vl66z1F6PlEWyzXAWZ29RofE4iRMaClxLUxMJleNdd1LLGeOLk0Ar8VpXqfMYWh+e4IDLQ6N/TNUFOEZb6nwmQI4E0Fq6oXfwP9ogQ9VOH0tm1Y+cCFYKQO4XI7hyFEeVRpQj5qOJigdM/fCqSH4zIe726GO9QuXMACVK2Jqs2AESyzrwo/Mw4adpNqNU44n+2Qsi81IL1G2Y8Snwu6Neo+SFqgRS+O5pFb+x5ucdD+i0NqjfNyTXle5W8HJiJ7Bmc8F6zaNPxwVX2t/scAGwsQU9U6hg2bI4lpalIBAqnjR1mVXU31v9WZB7GX+WphCJlfW7OhF2ZW9XJ7EOJN5MO1FblE2armRoSN6xFpiM44ztgsJJArNWymVgZVIZkLfghLMMoxC14f8pSyMvUeJ9zazquGO8EANGf4W6Qm68oIqoDKMNQbVX7dOJ6jUxDz8r0=
