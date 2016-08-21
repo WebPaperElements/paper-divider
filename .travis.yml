@@ -16,13 +16,10 @@ addons:
 before_install:
   - npm i -g npm@^2.0.0
 before_script:
-  - npm install web-component-tester
-  - npm install bower
+  - npm install
   - 'export PATH=$PWD/node_modules/.bin:$PATH'
   - bower install
-  - npm install polylint
   - polylint
-  - npm prune
 script:
   - xvfb-run wct
   - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi

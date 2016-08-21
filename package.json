@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/WebPaperElements/paper-divider#readme",
   "devDependencies": {
-    "semantic-release": "^4.3.5"
+    "bower": "^1.7.9",
+    "polylint": "^2.10.1",
+    "semantic-release": "^4.3.5",
+    "web-component-tester": "^4.3.1"
   }
 }
