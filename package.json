@@ -1,0 +1,25 @@
+{
+  "name": "paper-divider",
+  "description": "A Material Divider Element.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebPaperElements/paper-divider.git"
+  },
+  "author": "Vinicius Patrinhani <patrinhani@ciandt.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebPaperElements/paper-divider/issues"
+  },
+  "homepage": "https://github.com/WebPaperElements/paper-divider#readme",
+  "devDependencies": {
+    "semantic-release": "^4.3.5"
+  }
+}

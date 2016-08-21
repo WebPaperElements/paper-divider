@@ -1,15 +1,11 @@
-language: node_js
 sudo: false
-before_script:
-  - npm install web-component-tester
-  - npm install bower
-  - 'export PATH=$PWD/node_modules/.bin:$PATH'
-  - bower install
-  - npm install polylint
-  - polylint
-branches:
-  except: gh-pages
-node_js: 4
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+node_js: '4'
 addons:
   firefox: latest
   apt:
@@ -17,6 +13,18 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
+before_install:
+  - npm i -g npm@^2.0.0
+before_script:
+  - npm install web-component-tester
+  - npm install bower
+  - npm install semantic-release
+  - npm install semantic-release-cli
+  - 'export PATH=$PWD/node_modules/.bin:$PATH'
+  - bower install
+  - npm install polylint
+  - polylint
+  - npm prune
 script:
   - xvfb-run wct
   - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
@@ -24,3 +32,9 @@ addons:
   sauce_connect:
     username: "patrinhani-ciandt"
     access_key: "e7560d31-b7b9-4108-abad-12b4124e9edc"
+after_success:
+  - npm run semantic-release
+branches:
+  except: 
+    - gh-pages
+    - /^v\d+\.\d+\.\d+$/
