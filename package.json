@@ -1,7 +1,7 @@
 {
   "name": "paper-divider",
   "description": "A Material Divider Element.",
-  "version": "0.0.0-placeholder",
+  "version": "1.0.2",
   "directories": {
     "test": "test"
   },
