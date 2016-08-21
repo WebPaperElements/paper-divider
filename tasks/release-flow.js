@@ -46,7 +46,7 @@ gulp.task('push-changes', function (cb) {
 });
 
 gulp.task('create-new-tag', function (cb) {
-  var version = getPackageJsonVersion();
+  var version = 'v' + getPackageJsonVersion();
   git.tag(version, 'Created Tag for version: ' + version, function (error) {
     if (error) {
       return cb(error);
@@ -63,7 +63,7 @@ gulp.task('create-new-tag', function (cb) {
 
 gulp.task('release', function (callback) {
   runSequence(
-    'bump-version',
+    //'bump-version',
     'changelog',
     'commit-changes',
     'push-changes',

@@ -37,7 +37,7 @@ addons:
 branches:
   except:
     - gh-pages
-    - /^v\d+\.\d+\.\d+$/
+    - /^v?\d+\.\d+\.\d+$/
 env:
   global:
     secure: X2yPtt9Xj2Xc8T+qetztAz7q9VM5GmDttqSOQRtPn1iyjV4RBqaqlK7MEwFvhayF6o8LD1VoUmbRJpCM4KrIsjixH0TvfzfV+vyqBVRl9Il1J3ptZT95PZ8CkHKn2sCrhOIFuQdn1BXMa+QDJtXlbvUUsNkNXHh0C3FszqP3aWwdiI2gHn3JXgFsoZSd5c+DNjrwt8wivlEWl8cgY/+MR0MbNdCeRvm+XrTb2VbKPQ888qYUJfizM2lGD0XQXRKu8JMAtNnzJS3M2A/HTscGuII5YidiLmX12/ntsyFADioUYZdQTdGfLm4AFRS6zPXx3UZvIYG687kJFcU4ExRAzZzSb4+UnhJm1Vm+da4+msgp4QoHwSjRuUBIzGqjKpx+gBXW3ZSt3kN+hKNQEG3wciauEf9p3esfwPN1Hiw2NwO1Dj0MYNMbgs9LKUVvc7HzFruI7zbAwOxzcYB3wVUZKIALSW8/QkhFSOFHQ8lba05/1jP9UyUosBi6cmGOwiHk+klju6kfr97inCr1jZ+nDaoeQti809MLY6b8NC+rXC5HEJEdbu81iYYje1ieVG81GQnfzACxMpPRotAY6tQc8dAYXvAuD1pWNvdl5Ieq1ZwDRpL94A5KLyDTyHp2ZkC595SKCyx/+afsgOv2Nka2rtFUcaVGrF/wpr4u9M1JW9c=
