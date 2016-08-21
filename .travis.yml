@@ -18,8 +18,6 @@ before_install:
 before_script:
   - npm install web-component-tester
   - npm install bower
-  - npm install semantic-release
-  - npm install semantic-release-cli
   - 'export PATH=$PWD/node_modules/.bin:$PATH'
   - bower install
   - npm install polylint
