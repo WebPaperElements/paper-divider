@@ -13,9 +13,6 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
-  sauce_connect:
-    username: patrinhani-ciandt
-    access_key: "e7560d31-b7b9-4108-abad-12b4124e9edc"
 before_install:
   - npm i -g npm@^2.0.0
 before_script:
@@ -31,6 +28,10 @@ after_success:
   - git config credential.helper "store --file=.git/credentials"
   - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
   - npm run release
+addons:
+  sauce_connect:
+    username: patrinhani-ciandt
+    access_key: "e7560d31-b7b9-4108-abad-12b4124e9edc"
 branches:
   except:
     - gh-pages
