@@ -29,7 +29,7 @@ addons:
     username: "patrinhani-ciandt"
     access_key: "e7560d31-b7b9-4108-abad-12b4124e9edc"
 after_success:
-  - npm run semantic-release
+  - npm run release
 branches:
   except: 
     - gh-pages

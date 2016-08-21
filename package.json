@@ -1,13 +1,13 @@
 {
   "name": "paper-divider",
   "description": "A Material Divider Element.",
-  "version": "1.0.2",
+  "version": "1.0.0",
   "directories": {
     "test": "test"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "release": "gulp release"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,9 @@
   "homepage": "https://github.com/WebPaperElements/paper-divider#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "gulp": "^3.9.1",
     "polylint": "^2.10.1",
-    "semantic-release": "^4.3.5",
+    "require-dir": "^0.3.0",
     "web-component-tester": "^4.3.1"
   }
 }
