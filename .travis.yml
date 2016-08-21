@@ -18,6 +18,7 @@ before_install:
 before_script:
   - npm install
   - 'export PATH=$PWD/node_modules/.bin:$PATH'
+  - npm prune
   - bower install
   - polylint
 script:
