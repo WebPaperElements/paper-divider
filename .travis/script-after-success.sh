@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $TRAVIS_BRANCH == 'release' ]] 
+if [[ $TRAVIS_BRANCH == $GH_RELEASE_BRANCH ]] 
 then
   git config credential.helper "store --file=.git/credentials"
 

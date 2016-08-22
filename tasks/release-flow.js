@@ -42,7 +42,7 @@ gulp.task('commit-changes', function () {
 });
 
 gulp.task('push-changes', function (cb) {
-  git.push('origin', 'master', cb);
+  git.push('origin', process.env.GH_RELEASE_BRANCH, cb);
 });
 
 gulp.task('create-new-tag', function (cb) {
@@ -51,7 +51,7 @@ gulp.task('create-new-tag', function (cb) {
     if (error) {
       return cb(error);
     }
-    git.push('origin', 'master', {args: '--tags'}, cb);
+    git.push('origin', process.env.GH_RELEASE_BRANCH, {args: '--tags'}, cb);
   });
 
   function getPackageJsonVersion () {
@@ -63,10 +63,10 @@ gulp.task('create-new-tag', function (cb) {
 
 gulp.task('release', function (callback) {
   runSequence(
-    //'bump-version',
+    // 'bump-version',
     'changelog',
-    'commit-changes',
-    'push-changes',
+    // 'commit-changes',
+    // 'push-changes',
     'create-new-tag',
     'github-release',
     function (error) {
