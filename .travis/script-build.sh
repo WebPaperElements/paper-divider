@@ -2,6 +2,7 @@
 
 xvfb-run wct
 
-if [[$TRAVIS_PULL_REQUEST == 'false']] 
-  wct -s 'default'; 
+if [[ $TRAVIS_PULL_REQUEST == 'false' ]] 
+then
+  wct -s 'default'
 fi
