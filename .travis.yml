@@ -13,23 +13,10 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
-before_install:
-  - npm i -g npm@^2.0.0
-before_script:
-  - npm install
-  - 'export PATH=$PWD/node_modules/.bin:$PATH'
-  - npm prune
-  - bower install
-  - polylint
-script:
-  - xvfb-run wct
-  - if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then wct -s 'default'; fi
-after_success:
-  - git config credential.helper "store --file=.git/credentials"
-  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  - git config --global user.email "TravisCI-WebPaperElements:@github.com"
-  - git config --global user.name "WebPaperElements (via TravisCI)"
-  - npm run release
+before_install: .travis/script-before-install.sh
+before_script: .travis/script-before.sh
+script: .travis/script-build.sh
+after_success: .travis/script-after-success.sh
 addons:
   sauce_connect:
     username: patrinhani-ciandt
