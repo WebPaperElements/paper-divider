@@ -63,10 +63,10 @@ gulp.task('create-new-tag', function (cb) {
 
 gulp.task('release', function (callback) {
   runSequence(
-    //'bump-version',
-    'changelog',
-    'commit-changes',
-    'push-changes',
+    // 'bump-version',
+    // 'changelog',
+    // 'commit-changes',
+    // 'push-changes',
     'create-new-tag',
     'github-release',
     function (error) {
